@@ -1,38 +1,38 @@
-# Next.js 라우터 표시 CLI 애플리케이션 개발 계획
+# Next.js Router Display CLI Application Development Plan
 
-## 프로젝트 개요
-- 이름: `show-nextjs-routers`
-- 목적: Next.js 앱의 라우터 구조를 CLI에서 표시
-- 기능: 
-  - 기본 모드: 라우트 URL 목록 표시
-  - 트리 모드(-t): 라우트 계층 구조를 트리 형태로 표시
+## Project Overview
+- Name: `show-nextjs-routers`
+- Purpose: Display router structure of Next.js applications in CLI
+- Features: 
+  - Default mode: Display route URL list
+  - Tree mode (-t): Display route hierarchy in tree format
 
-## 개발 체크리스트
+## Development Checklist
 
-### 기본 설정
-- [x] 프로젝트 초기화 (package.json)
-- [x] 필요한 의존성 설치
+### Basic Setup
+- [x] Initialize project (package.json)
+- [x] Install necessary dependencies
 
-### 핵심 기능 개발
-- [x] CLI 인자 파싱 구현
-- [x] Next.js 앱 디렉토리 탐색 기능 구현
-- [x] 라우터 정보 추출 기능 구현
-- [x] 기본 모드 출력 구현 (URL 목록)
-- [x] 트리 모드 출력 구현 (-t 옵션)
+### Core Feature Development
+- [x] Implement CLI argument parsing
+- [x] Implement Next.js app directory detection
+- [x] Implement router information extraction
+- [x] Implement default mode output (URL list)
+- [x] Implement tree mode output (-t option)
 
-### 배포 준비
-- [x] 실행 가능한 bin 스크립트 설정
-- [x] README 및 문서 작성
-- [x] npm 패키지 설정
-- [x] 패키지 테스트
+### Deployment Preparation
+- [x] Set up executable bin script
+- [x] Write README and documentation
+- [x] Configure npm package
+- [x] Test package
 
-### 배포
-- [ ] npm 계정 설정
-- [ ] 패키지 배포 (npm publish)
+### Deployment
+- [ ] Set up npm account
+- [ ] Publish package (npm publish)
 
-## 개발 순서
-1. 기본 프로젝트 구조 설정 ✅
-2. 핵심 기능 구현 ✅
-3. CLI 인터페이스 구현 ✅
-4. 테스트 및 디버깅 ✅
-5. 패키지 배포 준비 및 실행
+## Development Sequence
+1. Set up basic project structure ✅
+2. Implement core functionality ✅
+3. Implement CLI interface ✅
+4. Test and debug ✅
+5. Prepare for package deployment and execution
