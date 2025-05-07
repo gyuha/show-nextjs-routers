@@ -4,6 +4,9 @@
 
 A CLI tool that visually displays the router structure of Next.js applications.
 
+> [!Note]
+> Only environments using Next.js version 15 or higher with the app router are supported.
+
 ## Installation
 
 ```bash
