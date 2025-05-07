@@ -1,4 +1,4 @@
-<p align="right"><a href="./README.md">English</a> | <a href="./README.ko.md">한국어</a></p>
+<p align="right">English | <a href="./README.ko.md">한국어</a> | <a href="./README.ja.md">日本語</a></p>
 
 # show-nextjs-routers
 
