@@ -1,3 +1,5 @@
+<p align="right"><a href="./README.md">English</a> | <a href="./README.ko.md">한국어</a></p>
+
 # show-nextjs-routers
 
 A CLI tool that visually displays the router structure of Next.js applications.

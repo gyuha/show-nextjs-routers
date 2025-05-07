@@ -1,3 +1,5 @@
+<p align="right"><a href="./README.md">English</a> | <a href="./README.ko.md">한국어</a></p>
+
 # show-nextjs-routers
 
 Next.js 애플리케이션의 라우터 구조를 시각적으로 표시해주는 CLI 도구입니다.
