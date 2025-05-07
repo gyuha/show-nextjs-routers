@@ -1,7 +1,7 @@
 {
   "name": "show-nextjs-routers",
-  "version": "1.0.0",
-  "description": "Next.js 애플리케이션의 라우터 구조를 표시하는 CLI 도구",
+  "version": "0.1.0",
+  "description": "NEXT.JS CLI tools indicating the router structure of the application",
   "main": "lib/index.js",
   "bin": {
     "show-nextjs-routers": "bin/show-nextjs-routers.js"
