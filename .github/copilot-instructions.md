@@ -19,6 +19,7 @@ http://localhost:3000/sample
 │        └─ 📁 spec-group-editor [http://localhost:3000/:brand/regional/sales-operation-trim/spec-group-editor]
 └─ 📁 sample [http://localhost:3000/sample]
 ```
+- 제작 된 어플리케이션은 npmjs.org에 올려줘
 
 ## 참고 소스
 ```js
