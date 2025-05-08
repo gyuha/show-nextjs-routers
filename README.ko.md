@@ -70,6 +70,21 @@ npx show-nextjs-routers -h https://example.com
 npx show-nextjs-routers -d ./src/app
 ```
 
+동적 라우트 파라미터 대체:
+```bash
+npx show-nextjs-routers -s brand=cola
+```
+`-s` 또는 `--slug` 옵션을 사용하면 동적 라우트 파라미터를 실제 값으로 대체할 수 있습니다. 예를 들어, `-s brand=cola` 옵션을 사용하면 URL의 `:brand` 부분이 `cola`로 대체됩니다. 이는 특정 라우트 시나리오를 테스트하는 데 유용합니다.
+
+slug 대체를 사용한 결과 예시:
+```
+http://localhost:3000
+http://localhost:3000/list
+http://localhost:3000/cola/sales/item
+http://localhost:3000/sample
+http://localhost:3000/sample/node
+```
+
 도움말 표시:
 ```bash
 npx show-nextjs-routers --help
@@ -80,7 +95,9 @@ npx show-nextjs-routers --help
 - Next.js App Router 구조 자동 감지
 - URL 목록 또는 트리 형태로 라우트 시각화
 - 동적 라우트 ([slug] → :slug) 변환
+- 동적 라우트 파라미터 대체 기능 지원
 - 다양한 Next.js 라우팅 규칙 지원
+- 라우트 그룹(괄호로 된 폴더) 지원
 
 ## 요구사항
 

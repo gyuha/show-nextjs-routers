@@ -70,6 +70,22 @@ Directly specify app directory:
 npx show-nextjs-routers -d ./src/app
 ```
 
+Replace dynamic route parameters:
+```bash
+npx show-nextjs-routers -s brand=cola
+```
+The `-s` or `--slug` option allows you to replace dynamic route parameters with actual values. For instance, using `-s brand=cola` will replace `:brand` with `cola` in the URLs. This is useful for testing specific route scenarios.
+
+Example output with slug replacement:
+```
+http://localhost:3000
+http://localhost:3000/list
+http://localhost:3000/cola/sales/item
+http://localhost:3000/sample
+http://localhost:3000/sample/node
+```
+
+
 Display help:
 ```bash
 npx show-nextjs-routers --help
@@ -80,6 +96,7 @@ npx show-nextjs-routers --help
 - Automatic detection of Next.js App Router structure
 - Route visualization in URL list or tree format
 - Dynamic route conversion ([slug] → :slug)
+- Support for dynamic route parameter substitution
 - Support for various Next.js routing rules
 - Support for Route Groups (folders with parentheses)
 

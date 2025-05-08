@@ -70,6 +70,21 @@ npx show-nextjs-routers -h https://example.com
 npx show-nextjs-routers -d ./src/app
 ```
 
+動的ルートパラメータの置換：
+```bash
+npx show-nextjs-routers -s brand=cola
+```
+`-s`または`--slug`オプションを使用すると、動的ルートパラメータを実際の値に置き換えることができます。例えば、`-s brand=cola`を使用すると、URLの`:brand`部分が`cola`に置き換えられます。これは特定のルートシナリオをテストするのに役立ちます。
+
+slugの置換を使用した結果例：
+```
+http://localhost:3000
+http://localhost:3000/list
+http://localhost:3000/cola/sales/item
+http://localhost:3000/sample
+http://localhost:3000/sample/node
+```
+
 ヘルプの表示：
 ```bash
 npx show-nextjs-routers --help
@@ -80,7 +95,9 @@ npx show-nextjs-routers --help
 - Next.js App Router構造の自動検出
 - URLリストまたはツリー形式でのルート可視化
 - 動的ルート（[slug] → :slug）変換
+- 動的ルートパラメータ置換機能のサポート
 - 様々なNext.jsルーティングルールのサポート
+- ルートグループ（括弧で囲まれたフォルダ）のサポート
 
 ## 要件
 
