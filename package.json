@@ -1,6 +1,6 @@
 {
   "name": "show-nextjs-routers",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "NEXT.JS CLI tools indicating the router structure of the application",
   "main": "lib/index.js",
   "bin": {
