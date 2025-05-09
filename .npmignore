@@ -4,3 +4,4 @@ project_plan.md
 .github/
 .gitignore
 .DS_Store
+.vscode/
