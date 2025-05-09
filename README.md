@@ -5,7 +5,7 @@
 A CLI tool that visually displays the router structure of Next.js applications.
 
 > [!Note]
-> Supports both App Router and Pages Router in Next.js version 15 or higher.
+> Only supports Next.js version 15 or higher.
 
 ## Installation
 
@@ -58,17 +58,6 @@ Example output:
    └─ 📁 node [http://localhost:3000/sample/node]
 ```
 
-### Router Type Selection
-
-You can specify the router type with the `-r` or `--router` option:
-
-```bash
-npx show-nextjs-routers -r app    # For App Router
-npx show-nextjs-routers -r pages  # For Pages Router
-```
-
-By default, the tool will automatically detect the router type based on the directory structure.
-
 ### Additional Options
 
 Change host URL:
@@ -96,6 +85,7 @@ http://localhost:3000/sample
 http://localhost:3000/sample/node
 ```
 
+
 Display help:
 ```bash
 npx show-nextjs-routers --help
@@ -103,8 +93,7 @@ npx show-nextjs-routers --help
 
 ## Features
 
-- Support for both App Router and Pages Router
-- Automatic detection of Next.js router structure
+- Automatic detection of Next.js App Router structure
 - Route visualization in URL list or tree format
 - Dynamic route conversion ([slug] → :slug)
 - Support for dynamic route parameter substitution
@@ -114,7 +103,7 @@ npx show-nextjs-routers --help
 ## Requirements
 
 - Node.js 15.0.0 or higher
-- Next.js 15 or higher with App Router or Pages Router
+- Use app router
 
 ## License
 

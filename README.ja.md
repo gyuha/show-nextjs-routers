@@ -5,7 +5,7 @@
 Next.jsアプリケーションのルーター構造を視覚的に表示するCLIツールです。
 
 > [!Note]
-> Next.js 15以上のappルーターとpagesルーターの両方をサポートしています。
+> Next.js 15以上のみサポートしています。
 
 ## インストール
 
@@ -58,17 +58,6 @@ npx show-nextjs-routers -t
    └─ 📁 node [http://localhost:3000/sample/node]
 ```
 
-### ルータータイプの選択
-
-`-r`または`--router`オプションでルータータイプを指定できます：
-
-```bash
-npx show-nextjs-routers -r app    # Appルーターの場合
-npx show-nextjs-routers -r pages  # Pagesルーターの場合
-```
-
-デフォルトでは、ツールはディレクトリ構造に基づいて自動的にルータータイプを検出します。
-
 ### 追加オプション
 
 ホストURLの変更：
@@ -103,8 +92,7 @@ npx show-nextjs-routers --help
 
 ## 特徴
 
-- AppルーターとPagesルーターの両方をサポート
-- Next.jsルーター構造の自動検出
+- Next.js App Router構造の自動検出
 - URLリストまたはツリー形式でのルート可視化
 - 動的ルート（[slug] → :slug）変換
 - 動的ルートパラメータ置換機能のサポート
@@ -114,7 +102,7 @@ npx show-nextjs-routers --help
 ## 要件
 
 - Node.js 15.0.0以上
-- AppルーターまたはPagesルーターを使用するNext.js 15以上
+- Appルーターの使用
 
 ## ライセンス
 
