@@ -1,5 +1,6 @@
 ## Requirements
 - use Context7 mcp
+- use sequential-thinking mcp
 - NEXTJS 15 or later programs.
 - NPM Package and can be executed with NPX
 
