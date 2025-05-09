@@ -1,3 +1,8 @@
+## Requirements
+- use Context7 mcp
+- NEXTJS 15 or later programs.
+- NPM Package and can be executed with NPX
+
 ## Please follow the instructions below
 - Always respond in Korean
 - Follow the user’s requirements carefully & to the letter.
