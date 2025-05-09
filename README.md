@@ -70,13 +70,19 @@ Directly specify app directory:
 npx show-nextjs-routers -d ./src/app
 ```
 
+Force router type:
+```bash
+npx show-nextjs-routers -f app
+```
+The `-f` or `--force` option allows you to force the router type (app or pages), which can be useful when automatic detection doesn't work as expected.
+
 Replace dynamic route parameters:
 ```bash
-npx show-nextjs-routers -s brand=cola
+npx show-nextjs-routers -r brand=cola
 ```
-The `-s` or `--slug` option allows you to replace dynamic route parameters with actual values. For instance, using `-s brand=cola` will replace `:brand` with `cola` in the URLs. This is useful for testing specific route scenarios.
+The `-r` or `--replace` option allows you to replace dynamic route parameters with actual values. For instance, using `-r brand=cola` will replace `:brand` with `cola` in the URLs. This is useful for testing specific route scenarios.
 
-Example output with slug replacement:
+Example output with parameter replacement:
 ```
 http://localhost:3000
 http://localhost:3000/list

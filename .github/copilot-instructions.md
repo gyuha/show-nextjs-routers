@@ -5,7 +5,6 @@
 - NPM Package and can be executed with NPX
 
 ## Please follow the instructions below
-- Always respond in Korean
 - Follow the user’s requirements carefully & to the letter.
 - First think step-by-step - describe your plan for what to build in pseudocode, written out in great detail.
 - Confirm, then write code!

@@ -70,13 +70,19 @@ npx show-nextjs-routers -h https://example.com
 npx show-nextjs-routers -d ./src/app
 ```
 
+ルータータイプの強制指定：
+```bash
+npx show-nextjs-routers -f app
+```
+`-f`または`--force`オプションを使用すると、ルータータイプ（appまたはpages）を強制的に指定できます。自動検出が予想通りに動作しない場合に便利です。
+
 動的ルートパラメータの置換：
 ```bash
-npx show-nextjs-routers -s brand=cola
+npx show-nextjs-routers -r brand=cola
 ```
-`-s`または`--slug`オプションを使用すると、動的ルートパラメータを実際の値に置き換えることができます。例えば、`-s brand=cola`を使用すると、URLの`:brand`部分が`cola`に置き換えられます。これは特定のルートシナリオをテストするのに役立ちます。
+`-r`または`--replace`オプションを使用すると、動的ルートパラメータを実際の値に置き換えることができます。例えば、`-r brand=cola`を使用すると、URLの`:brand`部分が`cola`に置き換えられます。これは特定のルートシナリオをテストするのに役立ちます。
 
-slugの置換を使用した結果例：
+パラメータ置換を使用した結果例：
 ```
 http://localhost:3000
 http://localhost:3000/list

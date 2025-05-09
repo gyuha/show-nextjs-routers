@@ -70,13 +70,19 @@ npx show-nextjs-routers -h https://example.com
 npx show-nextjs-routers -d ./src/app
 ```
 
+라우터 타입 강제 지정:
+```bash
+npx show-nextjs-routers -f app
+```
+`-f` 또는 `--force` 옵션을 사용하면 라우터 타입(app 또는 pages)을 강제로 지정할 수 있습니다. 자동 감지가 예상대로 작동하지 않을 때 유용합니다.
+
 동적 라우트 파라미터 대체:
 ```bash
-npx show-nextjs-routers -s brand=cola
+npx show-nextjs-routers -r brand=cola
 ```
-`-s` 또는 `--slug` 옵션을 사용하면 동적 라우트 파라미터를 실제 값으로 대체할 수 있습니다. 예를 들어, `-s brand=cola` 옵션을 사용하면 URL의 `:brand` 부분이 `cola`로 대체됩니다. 이는 특정 라우트 시나리오를 테스트하는 데 유용합니다.
+`-r` 또는 `--replace` 옵션을 사용하면 동적 라우트 파라미터를 실제 값으로 대체할 수 있습니다. 예를 들어, `-r brand=cola` 옵션을 사용하면 URL의 `:brand` 부분이 `cola`로 대체됩니다. 이는 특정 라우트 시나리오를 테스트하는 데 유용합니다.
 
-slug 대체를 사용한 결과 예시:
+파라미터 대체를 사용한 결과 예시:
 ```
 http://localhost:3000
 http://localhost:3000/list
